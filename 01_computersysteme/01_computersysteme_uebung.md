@@ -2,8 +2,8 @@
 
 Wir basteln ein bisschen an einem PC rum und schauen uns die einzelnen Komponenten an.
 
-## Teile eines aktuellen Wintel Computers (n.A.)
-
+## Teile eines aktuellen Wintel Computers 
+(Natürlich unvollständig)
 * CPU
 
 * Arbeitsspeicher
@@ -29,6 +29,9 @@ Wir basteln ein bisschen an einem PC rum und schauen uns die einzelnen Komponent
   * Netzwerkkarten
   * Speicherkarten
   * Erweiterungskarten E/A
+  * TV-Karten
+  * Videograbberkarten
+  * etc..
 * Eingabe/Ausgabe-Konnektoren
 
   * Extern
@@ -48,5 +51,5 @@ Wir basteln ein bisschen an einem PC rum und schauen uns die einzelnen Komponent
     * S/ATA
     * SAS
     * M.2
-    * USB Pfostenanschluss​
+    * USB Pfostenanschluss
 * BIOS-Einstellungen

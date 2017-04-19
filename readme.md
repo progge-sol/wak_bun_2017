@@ -15,7 +15,7 @@ Für jede Vorlesung ist ein nummerierter Ordner angelegt. Das Material beinhaltet
 * 04.05 - Betriebssyteme: Geschichte, Aufbau, Speicherverwaltung
 * 12.05 - Betriebssysteme 2
 * 19.05 - Betriebssystempraxis
-* 26.05 - Netzwerktheorie 
+* 25.05 - Netzwerktheorie / Himmelfahrt 
 * 01.06 - IPv4 und IPv6 
 * 08.06 - Diverse Netzwerkprotokolle
 * 15.06 - Netzwerkpraxis 
