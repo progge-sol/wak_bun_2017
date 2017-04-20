@@ -1,5 +1,9 @@
 # Übung Computersysteme
 
+![mainboard_schema](div/mainboard_schema.jpg)
+
+![ibm_mainboard](div/ibm_mainboard.jpg)
+
 Wir basteln ein bisschen an einem PC rum und schauen uns die einzelnen Komponenten an.
 
 ## Teile eines aktuellen Wintel Computers 

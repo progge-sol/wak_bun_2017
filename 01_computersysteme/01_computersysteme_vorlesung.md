@@ -1,3 +1,5 @@
+
+
 # Computersysteme
 
 ## Kleine Fragerunde
@@ -23,7 +25,7 @@
 
 ## Was ist ein Computer?
 
-* Sprachlich: _To Compute_, bis ins 19. Jahrhundert ein Beruf, der komplexe Berechnungen
+* Sprachlich: _To Compute_, bis ins 19. Jahrhundert ein Beruf von komplexen Berechnungen
 * Programmierbarkeit
 * Eingabe und Ausgabe
 * Instruktionen
@@ -47,7 +49,7 @@
 * Mainframes/ Großrechner
 * Supercomputer
 
-## Arbeitsweise eines Computers
+## Typisierung von Computern
 
 * Analogrechner
   * Keine Zählung von Ergebnissen und Stücken
@@ -60,6 +62,10 @@
 
 ## Erste Computer
 ![gezeitenrechner](div/gezeitenrechner.jpg)
+
+![z3](div/z3.jpg)
+
+![ibm_pc](div/ibm.jpg)
 
 
 
