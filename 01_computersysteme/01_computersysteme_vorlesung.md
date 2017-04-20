@@ -59,7 +59,7 @@
 * Hybridrechner
 
 ## Erste Computer
-![gezeitenrechner](div\gezeitenrechner.jpg)
+![gezeitenrechner](div/gezeitenrechner.jpg)
 
 
 
@@ -103,7 +103,7 @@ Kokurrierende Referenzmodelle für den theoretischen Computeraufbau:
 
 ## Aufbauschema einer Von-Neumann-Maschine
 
-![von_neumann_schema](div\von_neumann_schema.jpg)
+![von_neumann_schema](div/von_neumann_schema.jpg)
 
 ### Beschreibung der Von-Neumann-Maschine
 
@@ -139,7 +139,7 @@ Aufeinanderfolgende Befehle eines Programms werden in aufeinanderfolgenden Speic
 
 ## Harvard-Architektur-Schema
 
-![harvard_schema](div\harvard_schema.jpg)
+![harvard_schema](div/harvard_schema.jpg)
 
 ### Beschreibung der Harvard-Architektur
 
