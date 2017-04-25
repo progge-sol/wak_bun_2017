@@ -113,10 +113,13 @@ _Unterbrechende Scheduler teilen die CPU von vornherein nur für eine bestimmte 
 
 * CPU Zeit - Scheduler muss dynamisch reagieren, Probleme sind:
   * Starvation
-  * *Fairness
+  * Fairness
+  * ​
 
 
-Schedulerstrategien: First In – First Out (FIFO), First-Come First-Served (FCFS)
+#  Schedulerstrategien
+
+## First In – First Out (FIFO), First-Come First-Served (FCFS)
 
 alle Prozesse in der Reihenfolge ihres Eingangs bearbeitet
 
@@ -128,12 +131,7 @@ allerdings nicht bezüglich Ressourcen, die längere Zeit für eine Anforderung 
 
 Für Mehrbenutzersysteme ist die Strategie darüber hinaus wenig geeignet, da einzelne Benutzer so ggf. für längere Zeit (nämlich bei aufwendigen Prozessen anderer Benutzer) ausgeschlossen werden.
 
-
-
-
-
-
-Shortest-Job-Next (SJN), Shortest Job First (SJF), Shortest Processing Time (SPT)
+## Shortest-Job-Next (SJN), Shortest Job First (SJF), Shortest Processing Time (SPT)
 
 Funktioniert nur, wenn die benötigte Rechenzeit für einzelne Aufgaben aus Erfahrungswerten gut vorhergesagt werden kann
 
@@ -143,12 +141,7 @@ Können Prozesse unterbrochen werden, so dass ein Prozesswechsel durchgeführt w
 
 nicht für Mehrbenutzersysteme geeignet
 
-
-
-
-
-
-Earliest Due Date (EDD)
+## Earliest Due Date (EDD)
 
 Die Prozesse zuerst ausgeführt, welche die geringste Deadline haben
 
@@ -160,12 +153,7 @@ Wenn Prozesse unterbrochen werden können spricht man von einer Terminabhängige
 
 Diese Strategie kommt hauptsächlich in Echtzeitsystemen vor, da es damit möglich ist, eine definierte Antwortzeit für bestimmte Prozesse zu garantieren.
 
-
-
-
-
-
-Prioritätsscheduling
+## Prioritätsscheduling
 
 Bei dieser Strategie wird jedem Prozess eine Priorität zugeordnet. Die Abarbeitung erfolgt dann in der Reihenfolge der Prioritäten.
 
@@ -177,12 +165,7 @@ Man kann auch mehreren Prozessen die gleiche Priorität geben, sie werden dann i
 
 Die Prioritäten können auch dynamisch sein, wobei sich die Priorität eines Prozesses mit der Zeit erhöht, damit auch niedrig priorisierte Prozesse irgendwann bearbeitet werden und nicht ständig von höher priorisierten Prozessen verdrängt werden.
 
-
-
-
-
-
-Round Robin, Zeitscheibenverfahren
+## Round Robin, Zeitscheibenverfahren
 
 Einem Prozess wird die CPU für eine bestimmte (kurze) Zeitspanne zugeteilt.
 
@@ -190,12 +173,7 @@ Danach wird der Prozess wieder hinten in die Warteschlange eingereiht.
 
 Sind die einzelnen Zeitspannen unterschiedlich groß, so spricht man von Weighted Round Robin (WRR)
 
-
-
-
-
-
-Weitere Verfahren
+## Weitere Verfahren
 
 Priority Scheduler
 

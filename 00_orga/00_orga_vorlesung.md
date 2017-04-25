@@ -10,10 +10,17 @@
 
 * Das wichtigste zuerst: Klausur am Ende des Semsters (60 Minuten?)
 * 16 Theorieeinheiten a 90 Minuten
-	* Abgeschlossene Themenbereiche
-	* Alle Inhaltsbestandteil der Klausur
+  * Abgeschlossene Themenbereiche
+  * Alle Inhaltsbestandteil der Klausur
 * 4 Praxiseinheiten a 180 Minuten
-	* Praktische Umsetzung / Übungen zu den Lehrinhalten
+  * Praktische Umsetzung / Übungen zu den Lehrinhalten
+
+## Motivation
+* Eines der wenigen technischen Fächer des Studiums
+* Wichtig für das Allgemeinwissen eines Informatikers
+* Hoher privater Nutzwert
+* 	* Schnellere Bedienung
+* 	* Sachzusammenhänge besser erkennen
 
 ## Pflichtfolie WAK/BA : Workload
 
@@ -48,8 +55,8 @@
 ## Literaturhinweise
 
 * Tanenbaum, Andrew:
-	* Moderne Betriebssysteme
-	* Computernetzwerke
+  * Moderne Betriebssysteme
+  * Computernetzwerke
 * BSI Lagebericht
 * RFCs, IEEE-Standards
 * im Zweifelsfall aus der "allwissenden Müllhalde"
