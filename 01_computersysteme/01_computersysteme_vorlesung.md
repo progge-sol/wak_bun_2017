@@ -201,8 +201,8 @@ Aufeinanderfolgende Befehle eines Programms werden in aufeinanderfolgenden Speic
   * Schnittstellen
     * unidirektional
     * bidirektional
-
-
+	* Parallele Datenübertragung
+	* Seriell Datenübertragung
 
 ## Bussysteme
 
