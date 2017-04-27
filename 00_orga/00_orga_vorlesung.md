@@ -8,7 +8,7 @@
 
 ## Was erwartet euch in diesem Kurs?
 
-* Das wichtigste zuerst: Klausur am Ende des Semsters (60 Minuten?)
+* Das wichtigste zuerst: Klausur am Ende des Semsters (90 Minuten)
 * 16 Theorieeinheiten a 90 Minuten
   * Abgeschlossene Themenbereiche
   * Alle Inhaltsbestandteil der Klausur
@@ -19,8 +19,8 @@
 * Eines der wenigen technischen Fächer des Studiums
 * Wichtig für das Allgemeinwissen eines Informatikers
 * Hoher privater Nutzwert
-* 	* Schnellere Bedienung
-* 	* Sachzusammenhänge besser erkennen
+  * * Schnellere Bedienung
+  * * Sachzusammenhänge besser erkennen
 
 ## Pflichtfolie WAK/BA : Workload
 
