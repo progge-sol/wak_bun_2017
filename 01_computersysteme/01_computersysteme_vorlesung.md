@@ -140,7 +140,7 @@ Kokurrierende Referenzmodelle für den theoretischen Computeraufbau:
 
 Die Struktur des Von-Neumann-Rechners ist unabhängig von den zu bearbeitenden Problemen. Zur Lösung eines Problems muß von außen eine Bearbeitungsvorschrift, das Programm, eingegeben und im Speicherabgelegt werden. Ohne dieses Programm ist die Maschine nicht arbeitsfähig.
 Programme, Daten, Zwischen- und Endergebnisse werden in demselben Speicher abgelegt.
-DerSpeicher ist in gleichgroße Zellen unterteilt, die fortlaufend durchnummeriert sind. Über die Nummer (Adresse) einer Speicherzelle kann deren Inhalt abgerufen oder verändert werden.
+Der Speicher ist in gleichgroße Zellen unterteilt, die fortlaufend durchnummeriert sind. Über die Nummer (Adresse) einer Speicherzelle kann deren Inhalt abgerufen oder verändert werden.
 Aufeinanderfolgende Befehle eines Programms werden in aufeinanderfolgenden Speicherzellen abgelegt. Das Ansprechen des nächsten Befehls geschieht vom Steuerwerk aus durch Erhöhender Befehlsadresse um Eins. Durch Sprungbefehle kann von der Bearbeitung der Befehle in der gespeichertenReihenfolge abgewichen werden.
 
 ## Harvard-Architektur-Schema
@@ -150,8 +150,8 @@ Aufeinanderfolgende Befehle eines Programms werden in aufeinanderfolgenden Speic
 ### Beschreibung der Harvard-Architektur
 
 * Daten und Befehle liegen in getrennten Speicherbereichen
-* Programmablauf parallel,gleichzeitiges Laden von Daten und Befehlen möglich
-* Problem von nicht
+* Programmablauf parallel, gleichzeitiges Laden von Daten und Befehlen möglich
+* Problem von nicht sequenziellen Programmabläufen
 * Reine echte Umsetzung nur schwierig möglich, heute durch eigene Caches in der CPU umgesetzt
 
 
@@ -201,8 +201,8 @@ Aufeinanderfolgende Befehle eines Programms werden in aufeinanderfolgenden Speic
   * Schnittstellen
     * unidirektional
     * bidirektional
-	* Parallele Datenübertragung
-	* Seriell Datenübertragung
+  * Parallele Datenübertragung
+  * Seriell Datenübertragung
 
 ## Bussysteme
 
@@ -282,4 +282,4 @@ Aufeinanderfolgende Befehle eines Programms werden in aufeinanderfolgenden Speic
 
 ## Speicherhierarchie im Computer
 
-![speicherhierarchie](div/speicherhierarchie.jpg)
+![speicherhierarchie](div/speicherhierarchie.jpg)top
