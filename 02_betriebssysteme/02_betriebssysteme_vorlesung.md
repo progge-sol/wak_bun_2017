@@ -184,3 +184,22 @@ _Verwaltung der vorhandenen Systemkomponenten_
 # Wie wichtig sind Betriebssystem in der heutigen Zeit?
 
 ![os_important](div/authorization.png)
+
+
+
+Bootprozess
+
+
+
+Installtionsablauf
+
+
+
+Datei / Programm Unterschied
+
+
+
+Dateisysteme
+
+
+
