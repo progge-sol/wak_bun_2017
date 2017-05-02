@@ -282,4 +282,4 @@ Aufeinanderfolgende Befehle eines Programms werden in aufeinanderfolgenden Speic
 
 ## Speicherhierarchie im Computer
 
-![speicherhierarchie](div/speicherhierarchie.jpg)top
+![speicherhierarchie](div/speicherhierarchie.jpg)
