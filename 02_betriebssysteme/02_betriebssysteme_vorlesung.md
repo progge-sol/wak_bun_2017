@@ -119,7 +119,7 @@ _Verwaltung der vorhandenen Systemkomponenten_
 
   * Integrierte Schaltkreise (ICs)
   * Hochsprachen wie C
-  * Mainframes: Timesharing, VirtuelleMaschinen
+  * Mainframes: Timesharing, Virtuelle Maschinen
   * Multiuser, Multitask
 
 * Vierte Generation (1980 bis heute)
@@ -129,22 +129,18 @@ _Verwaltung der vorhandenen Systemkomponenten_
   * ObjektorientierteProgrammiersprachen
   * Home Computer
   * Personal Computer
-  * Teilweise Singleuser, teilweiseMultiuser
+  * Teilweise Singleuser, teilweise Multiuser
   * Verteilte Systeme
 
 ## Unterteilung von BS nach Anwendungsgebiet
 
 * Mainframe-OS (IBM OS390)
-
 * Server-OS (Windows Server, Linux)
-
 * PC Betriebsysteme (Windows 10, Linux)
-
 * Echtzeitbetriebssysteme (QNX, VxWorks)
-
 * Embedded Systeme (Emb.Linux, Windows CE)
-
 * Chipkarten Systeme (JVM)
+* Mobile-Systeme (IOS, Android, Symbian)
 
 ## Unterteilung von BS nach Betriebsart
 * Anzahl Benutzer:
@@ -170,8 +166,8 @@ _Verwaltung der vorhandenen Systemkomponenten_
 
 * Scheduler
 
-  * Anwendungsunterbrechung durchInterrupt-Steuerung
-  * Pointer-Rücksprung indas Betriebssystem und vom OSin die nächste Anwendung
+  * Anwendungsunterbrechung durch Interrupt-Steuerung
+  * Pointer-Rücksprung in das Betriebssystem und vom OS in die nächste Anwendung
 
 * Deadlocks
 
@@ -187,19 +183,129 @@ _Verwaltung der vorhandenen Systemkomponenten_
 
 
 
-Bootprozess
+## Bootprozess
+* Boot - von Boostrap - an den "Schnürsenkel aus dem Sumpf ziehen"
+
+* Eine Verkettung von kleinen Programmen
+
+* Typischerweise POST - BIOS - Bootloader 
+
+## Grober Ablauf:
 
 
+* Strom an
+* POST - Power on self Test (Ist das was "Piep" wenn etwas schief läuft)
 
-Installtionsablauf
+  * CPU Register checken
+  * BIOS Code Checksumme prüfen
+  * Überprüfung von DMA, Timern, etc.
+  * RAM initialisieren
+  * BIOS initialisieren
+* BIOS Basic Input Output System (eigentlich Firmware - BIOS von IBM)
+* Liegt auf einer ROM (Read Only Memory - typischerweise aber heute Flash oder EPROM)
+  * ​ Initalisiert den Rest der Hardware
+  * Hat eine Benutzeroberfläche um "Dinge" einzustellen
+  * Findet die Geräte, von denen gebootet werden kann
+  * Sucht den MBR - Master Boot Record
+    *  The MBR besteht aus den ersten 512 Bytes (und mehr)
+    *  64kb in Total mit erstem Bootloader (Aufgrund der geringen Größe kann der MBR keine Platten mit der Größe von 2 TB beschreiben)
+  * Lädt den ersten Bootloader
+  * Dieser kann die die bootfähigen Partitionen der Platte lesen
+  * Ließt von der ersten "aktiven" Partition dort den VBR (Volume Boot Record)
+  * Übergibt der CPU die erste Speicherposition der ausgewählten/ersten Bootpartition
+  * Führt diese aus
+* Windows bis XP NTLDR.exe - ab dann WINLOAD.exe
+* Möglichkeit F8-Taste zu drücken und den Bootprozess zu verändern
+* An einer bestimmten Stelle der Platte
+* NTOSKRNL.exe
+* Hat nur eine begrenzte Größe 
+  ​
 
 
+## Windows Fast StartUp / FastBoot
 
-Datei / Programm Unterschied
+* Windows 8 und 10 fahren nicht mehr runter
+* Gehen nurnoch in "Hibernate" Modus
+* Damit sehr schnelles wieder hochfahren möglich
+* ABER: kein echter Bootprozess
+* Damit Schwierigkeiten, da in nicht konsistenten Zustand
+
+## UEFI
+
+* Behäbt die Größenbeschränkung vom MBR auf - GPT (Grand Partition Table) statt MBR auf Festplatten
+* Netzwerkfähigkeit
+* Modularer Aufbau
+* Rückwärtskompatibilität
+
+## Installationsablauf eines Betriebssystems
+
+_Grob:_
+
+* Hardware erkennen
+* Treiber laden
+* Installationsziel auswählen
+* Notfalls Partitionieren und Formatieren
+* Dateien kopieren
+* Partition bootfähig machen
+* Neustarten
+
+## Dateisysteme
+
+### Wie ist eine Festplatte aufgebaut?
+
+![plattenaufbau](div/plattenaufbau.jpg)
+
+A: Track
+
+B: Sektor
+
+C: Sektor eines Tracks = Block
+
+D: Cluster 
+
+* Block - kleinste Einheit auf der Festplatte
 
 
-
-Dateisysteme
-
+* Früher 512 Bytes
 
 
+* Heute eher 4096-Byte
+* Aufgrund der Aufteilung in Sektoren und Blöcke - Größenproblem beim MBR
+
+## warum fängt die erste platte mit c an?
+
+![historie_laufwerke](div/historie_laufwerk.jpg)
+
+## Welche Dateisysteme gibt es
+
+* FAT16/32
+* exFAT
+* NTFS
+* ext4
+* ZFS
+* ...
+
+## Wo liegt der Unterschied zwischen einer Datei und einem Programm?
+
+- Datei genereller Begriff im Dateisystem - Ordner und Dateien
+- Programm: Datei mit ausführbarem Binärcode
+  - Typisiert in der Betriebssystem-API:
+    - Linux ELF-Binärdatei
+    - Windows PE-Binärdatei
+- Andere Dateien: Textdateien - wie liegen die im Speicher? In welchem Format? 
+  - ASCII
+  - UTF8
+
+## Welche Funktionen besitzt ein aktuelles Windows?
+
+* GUI 
+* CLI
+* APIs
+* Hardwaretreiber
+* Filesystem
+* Netzwerkstack
+* Logging
+* Benutzerverwaltung
+* Systemmanagement (Domäne,GPOs, ...)
+* Sicherheit
+* ...
