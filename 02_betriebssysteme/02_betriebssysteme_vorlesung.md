@@ -2,7 +2,7 @@
 
 ## Definition "Betriebssystem"
 
-* Ist inhärent Software
+* Ist inhärente Software
 * Ist Schnittstelle
   * zwischen Hardware
   * und Anwendung
